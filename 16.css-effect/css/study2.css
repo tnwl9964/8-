@@ -1,0 +1,36 @@
+.box1{
+    margin: 50px auto;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 0 black;
+    transition: all 1s ease 0s;
+}
+.box1:hover{
+    box-shadow: -20px -20px 10px black;
+}
+.box2{
+    border: 1px solid black;
+    margin: 50px auto;
+    width: 300px;
+    height: 300px;
+    box-shadow:inset 20px 20px 30px blue; /*inset 내부그림자*/
+}
+.box3{
+    border: 1px solid black;
+    margin: 50px auto;
+    width: 300px;
+    height: 300px;
+    box-shadow: 
+    0px 0px 0 red,
+    0px 0px 0 blue,
+    0px 0px 0 green; 
+    transition: all 1s ease 0s;
+    
+}
+.box3:hover{
+    box-shadow: 
+    20px 20px 0 red,
+    -20px -20px 0 blue,
+    40px -40px 0 green; 
+}

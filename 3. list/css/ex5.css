@@ -1,0 +1,34 @@
+*{margin: 0; padding: 0;}
+a{color: inherit; text-decoration: none;}
+b,strong,h1,h2,h3,h4,h5,h6{font-weight: inherit; font-size: inherit;}
+i,em,address{font-style: inherit;}
+ul,ol{list-style: none;}
+table{border-collapse: collapse;}
+img{max-width: 100%;}
+
+html{font-family: "Noto Sans KR", sans-serif; font-size: 14px;}
+
+.pc_game{
+    /* border: 1px solid blue; */
+    width: 400px;
+    padding: 24px 19px 20px 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.pc_game h3{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 34px;
+}
+/* .pc_game ul{border: 1px solid black;} */
+.pc_game ul>li{
+    margin-bottom: 20px;
+    background: #f8fafc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.pc_game ul>li:last-of-type{margin-bottom: 0;}
+.pc_game ul>li>a{display: flex; align-items: center;}
+.pc_game ul>li>a>img{flex: 1;}
+.game-info{flex: 1; padding-left: 30px;}
+.game-info>p{color: #929292;}

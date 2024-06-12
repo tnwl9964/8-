@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bmi예제</title>
+    <link rel="stylesheet" href="./css/ex1.css">
+</head>
+<body>
+    <!-- <div class="bmi_frame">
+        <h2>님의 bmi검사 결과 입니다.</h2>
+        <p>님의 키는 150cm이고 몸무게는 00kg입니다.</p>
+        <p>bmi는 현재 25.95입니다.</p>
+        <div class="bmi">
+            <div>저체중</div>
+            <div>정상</div>
+            <div>과체중</div>
+            <div>비만</div>
+        </div>
+    </div> -->
+    <script>
+        let userName = prompt("당신의 이름은?")
+        let userCm = Number(prompt("당신의 키는?")) 
+        let userKg = Number(prompt("당신의 몸무게는?")) 
+        let bmi = Math.round((userKg / Math.pow((userCm/100),2)*100))/100
+        let bmi_result = bmi>25?"비만":bmi>23?"과체중":bmi>18.5?"정상":"저체중"
+        // 체질량지수는 자신의 몸무게(kg)를 키의 제곱(m)으로 나눈 값입니다.
+        // bmi = 75kg / (1.7m * 1.7m)
+
+        // 사용자에게 키와 몸무게를 입력하라. bmi를 계산하여 다음과 같이 표로 나타낼 수 있도록 소스코드를 만들어보세요.
+        document.write(`
+        <div class="bmi_frame">
+            <h2>${userName}님의 bmi검사 결과 입니다.</h2>
+            <p>${userName}님의 키는 ${userCm}cm이고 몸무게는 ${userKg}kg입니다.</p>
+            <p>bmi는 현재 ${bmi}입니다.</p>
+            <p>현재 당신은 ${bmi_result}입니다.</p>
+            <div class="bmi">
+                <div>저체중</div>
+                <div>정상</div>
+                <div>과체중</div>
+                <div>비만</div>
+            </div>
+        </div>
+        `)
+
+        
+        // document.write(bmi>=50?"["+userName+"]님의 키는 ["+userCm+"]이시고, ["+userName+"]님의 몸무게는 ["+userKg+"]이십니다. bmi치수는 ["+bmi+"]이십니다.":"["+userName+"]님의 키는 ["+userCm+"]이시고, ["+userName+"]님의 몸무게는 ["+userKg+"]이십니다. bmi치수는 ["+bmi+"]이십니다. 비만이시군요.")
+
+    </script>    
+</body>
+</html>

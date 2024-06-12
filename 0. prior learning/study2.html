@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지태그</title>
+</head>
+<body>
+    <h1>이미지태그</h1>
+    <p>이미지파일을 연결해서 화면에 보여주는 태그</p>
+    <p>문맥적인 뜻은 없다.</p>
+    <p>글자처럼 그냥 단순한 컨텐츠로 취급된다.</p>
+    <p>src속성에 상대경로를 사용하여 이미지를 표현</p>
+    <p>alt속성은 대체택스트로 이미지가 정상적으로 보이지 않을 때 대신 나오는 택스트이다.</p>
+    <p style="font-size:80px;text-align: center;">
+        <img style="height: 80px;" src="./img/duck-8510483_1280.jpg" alt="천둥오리"> 이 녀석은
+        <img style="height: 80px;" src="./img/wolves-8372284_1280.jpg" alt="늑대 두마리"> 이 둘에게 <br><span style="color: rgb(136, 23, 23);background: gray;">잡아먹힙니다.</span>
+    </p>
+    <hr>
+    <h1>동영상태그</h1>
+    <p>영상파일을 연결해서 화면에 보여주는 태그</p>
+    <p>문맥적인 뜻 없이 컨텐츠으로 취급된다.</p>
+    <div style="width: 100%;position: relative;">
+        <video style="width: 100%;" src="./video/168572-839370257_small.mp4" autoplay muted loop></video>
+        <div style="position: absolute;width: 100%;height: 100%;left: 0;top: 0;background: rgba(0, 0, 0, 0.411);color: white;display: flex;justify-content: center;flex-direction: column;align-items: center;">
+            <h2 style="font-size: 80px;">꽃 하나</h2>
+            <p style="font-size: 20px;text-align:center;">너는 꽃처럼 아름답구나...</p>
+            <a href="#" style="background-color: gold;color: black;padding: 30px 100px;text-decoration: none;border-radius: 10px;">자세히보기</a>
+        </div>
+    </div>
+    <hr>
+    <h1>유투브영상</h1>
+    <iframe width="1250" height="703" src="https://www.youtube.com/embed/-8mYhq18ZXA" title="&quot;당신도 나를 안아줄 수 있을까요?&quot; 주인이 동료를 안아 볼 때, 구조된 유기묘도 사랑받기를 갈망하며 주인에게 다가가려 합니다" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>

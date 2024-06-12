@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투썸플레이스</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./style/font.css">
+    <link rel="stylesheet" href="./style/style_pc.css">
+    <link rel="stylesheet" href="./style/style_tab.css">
+    <link rel="stylesheet" href="./style/style_mo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src="./script/main.js"></script>
+</head>
+<body>
+    <!-- 슬라이딩 섹션(한바닥씩 넘어가는 페이지) ul -->
+    <div class="sliding_viewer">
+        <div class="state cur_slide">01</div>
+        <div class="process_box">
+            <div class="current_process-bar"></div>
+        </div>
+        <div class="state all_slide">06</div>
+    </div>
+    <!-- 기업단체&협력업체 ul -->
+    <ul class="fixed_menu">
+        <li><a class="cor" href="#">기업단체 구매</a></li>
+        <li><a class="par" href="#">협력업체 제안</a></li>
+    </ul>
+    <!-- 버튼 ul (최상단 슬라이드 이동)-->
+    <!-- <a href="#" class="btn_top">위로</a> -->
+    <!-- 헤더 -->
+    <header>
+        <div class="logo">
+            <h1><a href="#"><img src="./img/logo_black.svg" alt="투쌈플레이스_검은로고"></a></h1>
+        </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">투썸플레이스 소개</a>
+                    <ul>
+                        <li>
+                            <a href="#">투썸플레이스</a>
+                            <ul>
+                                <li><a href="#">비넡체계</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">BI</a></li>
+                                <li><a href="#">20주년 이야기</a></li>
+                                <li><a href="#">Recruit</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">매장</a>
+                            <ul>
+                                <li><a href="#">DT&DI</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">브로슈어</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./coffee_story.html">메뉴이야기</a>
+                    <ul>
+                        <li><a href="./coffee_story.html">커피이야기</a></li>
+                        <li><a href="./desert_story.html">디저트이야기</a></li>
+                        <li><a href="#">델리이야기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">브랜드지원</a>
+                    <ul>
+                        <li><a href="#">어썸 페어링 플렌트</a></li>
+                        <li><a href="#">어썸 디저트 플렌트</a></li>
+                        <li><a href="#">C&D센터</a></li>
+                        <li><a href="#">SEP센터</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">투썸플레이스 앱 & 맴버십</a>
+                    <ul>
+                        <li><a href="#">투썸플레이스 앱 소개</a></li>
+                        <li>
+                            <a href="#">투썸플레이스 멤버십</a>
+                            <ul>
+                                <li><a href="#">멤버십 소개</a></li>
+                                <li><a href="#">등급 및 혜택 </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">가맹점 창업안내</a>
+                    <ul>
+                        <li><a href="#">가맹점 개설 안내</a></li>
+                        <li><a href="#">창업설명회</a></li>
+                        <li><a href="#">온라인 창업상담신청</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">가맹점 전용 금융상품</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">새소식 & 공지</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+        <div class="util">
+            <a class="lang_en" href="#">English</a>
+            <img src="./img/ico_24_allmenu_black.svg" alt="메뉴">
+        </div>
+    </header>
+    <!-- 모든컨텐츠 -->
+    <div class="allcontent onepage_scl">
+        <section class="main_banner">
+            <div class="main_station">
+                <ul class="main_train">
+                    <li><img src="./img/MODS0030_20210617220418_hViWHnLB.jpg" alt="첫번째 슬라이드 이미지 - 투썸플레이스 커피"></li>
+                    <li><img src="./img/MODS0030_20210617220342_PhOmqlrg.jpg" alt="두번째 슬라이드 이미지 - 투썸플레이스 디저트 사진"></li>
+                </ul>
+                <div class="main_train_controler">
+                    <div class="btn main_btn_prev">
+                        <a href="#"><img src="./img/ico_arrow_left.svg" alt="이전버튼"></a>
+                    </div>
+                    <div class="main_train_status">
+                        <span class="main_cur_slide">1</span>
+                        /
+                        <span class="main_all_slide">2</span>
+                    </div>
+                    <div class="btn main_btn_next">
+                        <a href="#"><img src="./img/ico_arrow_right.svg" alt="다음버튼"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu_story">
+            <div class="inner_content">
+                <div class="outer_menu">
+                    <h2 class="bigTitile">MENU STORY</h2>
+                    <div class="menuFrame">
+                        <section class="tabTitle">
+                            <ul class="tab_title_ul">
+                                <li class="on">
+                                    <p>전문가의 섬세함으로 완성한 최상의 커피</p>
+                                    <h3>COFFEE STORY</h3>
+                                </li>
+                                <li>
+                                    <p>다양한 프리미엄 케이크 & 디저트</p>
+                                    <h3>DESSERT STORY</h3>
+                                </li>
+                                <li>
+                                    <p>가볍게 즐기는 맛있는 식사, 델리</p>
+                                    <h3>DELI STORY</h3>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="tabDesc">
+                            <div class="story_slider_station on">
+                                <div class="story_slide_ctrl">
+                                    <div class="btn-story">
+                                        <img src="./img/ico_arrow_left.svg" alt="왼쪽화살표">
+                                    </div>
+                                    <div class="menu_title_frame">호밀 B.E.L.T</div>
+                                    <div class="btn-story">
+                                        <img src="./img/ico_arrow_right.svg" alt="오른쪽화살표">
+                                    </div>
+                                </div>
+                                <ul class="story_slider">
+                                    <li class="on">
+                                        <a href="./coffee_story.html">
+                                            <img src="./img/img_t_menu01@3x.png" alt="01. 스페니쉬여유라떼">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./coffee_story.html">
+                                            <img src="./img/img_t_menu02@3x.png" alt="02. 롱블랙">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./coffee_story.html">
+                                            <img src="./img/img_t_menu03@3x.png" alt="03. TWG 1837 블랙티">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./coffee_story.html">
+                                            <img src="./img/img_t_menu04@3x.png" alt="04. 스트로베리 피치 프라페">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="story_slider_station">
+                                <div class="story_slide_ctrl">
+                                    <div class="btn-story">
+                                        <img src="./img/ico_arrow_left.svg" alt="왼쪽화살표">
+                                    </div>
+                                    <div class="menu_title_frame">호밀 B.E.L.T</div>
+                                    <div class="btn-story">
+                                        <img src="./img/ico_arrow_right.svg" alt="오른쪽화살표">
+                                    </div>
+                                </div>
+                                <ul class="story_slider">
+                                    <li>
+                                        <a href="./desert_story.html">
+                                            <img src="./img/img_p_menu08.jpg" alt="01. 스트로베리 초콜릿 생크림">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./desert_story.html">
+                                            <img src="./img/menu_dessert2.jpg" alt="02. 마스카포네 티라미수">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./desert_story.html">
+                                            <img src="./img/menu_dessert3.jpg" alt="03. 레드벨벳">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./desert_story.html">
+                                            <img src="./img/img_p_menu11.jpg" alt="04.뉴욕치즈케이크 ">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./desert_story.html">
+                                            <img src="./img/img_p_menu12.jpg" alt="05. 아이스박스">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./desert_story.html">
+                                            <img src="./img/menu_dessert6.jpg" alt="06. 마카롱세트">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./desert_story.html">
+                                            <img src="./img/menu_dessert7.jpg" alt="07. 소프트 아이스크림(컵)">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="story_slider_station">
+                                <div class="story_slide_ctrl">
+                                    <div class="btn-story">
+                                        <img src="./img/ico_arrow_left.svg" alt="왼쪽화살표">
+                                    </div>
+                                    <div class="menu_title_frame">호밀 B.E.L.T</div>
+                                    <div class="btn-story">
+                                        <img src="./img/ico_arrow_right.svg" alt="오른쪽화살표">
+                                    </div>
+                                </div>
+                                <ul class="story_slider">
+                                    <li>
+                                        <a href="./coffee_story.html">
+                                            <img src="./img/menu_deli6.jpg" alt="01. 호밀 B.E.L.T">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./coffee_story.html">
+                                            <img src="./img/menu_deli2.jpg" alt="02. 페스트햄치즈파니니">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./coffee_story.html">
+                                            <img src="./img/menu_deli7.jpg" alt="03. 베리머치에그">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./coffee_story.html">
+                                            <img src="./img/menu_deli4.jpg" alt="04. 그릴드 치킨 샐러드">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./coffee_story.html">
+                                            <img src="./img/menu_deli8.jpg" alt="05. 코코넛카야크루아상">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+        <section class="alist">
+            <div class="inner_content">
+                <div class="alist_outter">
+                    <h2 class="bigTitile">에이리스트</h2>
+                    <h3>
+                        TWOSOME<br>
+                        IN YOUR MUG, A LIST
+                    </h3>
+                    <h4>언제 어디서나 여유롭게 즐기는 에이리스트</h4>
+                    <p>좋은 커피를 마셔야 비로소 하루가 시작되는 느낌이라면 하루에도 몇 번씩 그윽한 커피 향이 생각난다면 마음속 우선순위에 언제나 커피가 있는 당신이라면 잊지 말고 챙겨야 할 단 하나의 리스트, 투썸플레이스 에이리스트.</p>
+                </div>          
+            </div>
+        </section>
+        <section class="brand_support">
+            <div class="inner_content">
+                <div class="outer_brand">
+                    <h2 class="bigTitile">BRAND<br>SUPPORT</h2>
+                    <div class="support_station">
+                        <ul class="support_train">
+                            <li>
+                                <figure>
+                                    <figcaption>Roasting Plane</figcaption>
+                                    <img src="./img/main_brand1.jpg" alt="로스팅 플렌드">
+                                </figure>
+                                <div class="txt_support">
+                                    <h5 class="sup1"><a href="#">로스팅 플랜트</a></h5>
+                                    <p>
+                                        원두 로스팅부터 고객의 손에 들리는
+                                        한 잔의 커피까지, 최고의 커피 품질을
+                                        만듭니다.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>Dessert Plant</figcaption>
+                                    <img src="./img/main_brand2.jpg" alt="디저트 플렌드">
+                                </figure>
+                                <div class="txt_support">
+                                    <h5 class="sup2"><a href="#">디저트 플랜트</a></h5>
+                                    <p>
+                                        최고의 맛과 품질을 자랑하는
+                                        투썸플레이스의 디저트를 만듭니다.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>C&D Center</figcaption>
+                                    <img src="./img/main_brand3.jpg" alt="C&D센터">
+                                </figure>
+                                <div class="txt_support">
+                                    <h5 class="sup3"><a href="#">C&D센터</a></h5>
+                                    <p>
+                                        창의성을 바탕으로 고부가가치 제품
+                                        개발과 원가경쟁력을 갖춘 제품 체계를
+                                        만들어 고객의 만족도를 높이고,
+                                        더욱 투썸플레이스답게 만들어주는
+                                        곳입니다.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <figure>
+                                    <figcaption>SEP Center</figcaption>
+                                    <img src="./img/main_brand4.jpg" alt="SEP센터">
+                                </figure>
+                                <div class="txt_support">
+                                    <h5 class="sup4"><a href="#">SEP센터</a></h5>
+                                    <p>
+                                        투썸플레이스 SEP센터는 브랜드 가치를
+                                        만들어 내는 전문가 육성 센터입니다.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    <div class="story_slide_ctrl">
+                        <div class="btn-story btn_sup_prev">
+                            <img src="./img/ico_arrow_left.svg" alt="왼쪽화살표">
+                        </div>
+                        <div class="menu_title_frame">
+                            <span class="sup_cur_slide">1</span>
+                            <span class="sup_cur_slide_slide">/4</span>
+                        </div>
+                        <div class="btn-story btn_sup_next">
+                            <img src="./img/ico_arrow_right.svg" alt="오른쪽화살표">
+                        </div>
+                    </div>    
+                </div>
+                
+                </div>
+            </div>
+        </section>
+        <section class="franchise">
+            <div class="fran_bg">
+                <div class="franFrame fran1">
+                    <img src="./img/img_store_01@3x.png" alt="을지트윈타워점">
+                    <h6>을지트윈타워점</h6>
+                </div>
+                <div class="franFrame fran2">
+                    <img src="./img/img_store_02@3x.png" alt="제주트윈타워점">
+                    <h6>제주트윈타워점</h6>
+                </div>
+                <div class="franFrame fran3">
+                    <img src="./img/img_store_03@3x.png" alt="송파트윈타워점">
+                    <h6>송파트윈타워점</h6>
+                </div>
+            </div>
+            <div class="animation_bg">
+                <!-- <div class="circle cir1">움직이는 원</div>
+                <div class="circle cir2">움직이는 원</div>
+                <div class="circle cir3">움직이는 원</div>
+                <div class="circle cir4">움직이는 원</div>
+                <div class="circle cir5">움직이는 원</div> -->
+            </div>
+            <script>
+                let animationBG = document.querySelector(".animation_bg")
+                let result = ``
+                let ea = 30
+                for(let i=0 ; i<ea ; i++){
+                    let divtop = Math.random()*900+50
+                    //50~950
+                    let dtime = Math.random()*10+5
+                    //5~15초
+                    let stime = Math.random()*4
+                    //0~4초
+                    result += `<div class="circle" style=" animation: moveRTtoL ${dtime}s linear ${stime}s infinite;top: ${divtop}px;">움직이는 원</div>`
+                }
+                console.log(result)
+                animationBG.innerHTML = result
+            </script>
+            <div class="inner_content">
+                <div class="outer_fran">
+                    <h2 class="bigTitile">FRANCHISE</h2>
+                    <p class="storyTitle">
+                        당신의 창업 성공 스토리,<br>
+                        투썸플레이스가 함께합니다.
+                    </p>
+                    <p>
+                        향기로운 커피와 달콤한 디저트가 함께하는 프리미엄 디저트<br>
+                        카페 투썸플레이스. 투썸플레이스의 축적된 경험과 노하우를<br>
+                        바탕으로 여러분의 성공창업을 약속 드립니다.
+                    </p>
+                    <div class="link_box">
+                        <a href="#">창업안내 바로가기</a>
+                        <a href="#">가맹상담 신청</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="inner_content">
+                <section class="notice_tit">
+                    <h2 class="bigTitile">NEWS<br>&NOTICE</h2>
+                    <p>공지사항</p>
+                    <img src="./img/main_news_illust.svg" alt="뉴스 이미지">
+                </section>
+                <section class="notice_list">
+                    <ul>
+                        <li>
+                            <p class="cate">공지사항</p>
+                            <h5>투썸플레이스 음료 열량 및 알레르기 유발 성분 안내 (2024.05.01 ver)</h5>
+                            <p class="date">2024-05-01</p>
+                        </li>
+                        <li>
+                            <p class="cate">공지사항</p>
+                            <h5>자본감소에 따른 채권자 이의제출 공고</h5>
+                            <p class="date">2024-04-12</p>
+                        </li>
+                        <li>
+                            <p class="cate">공지사항</p>
+                            <h5>투썸하트 멤버십 정책 변경 안내</h5>
+                            <p class="date">2023-06-01</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+    </div>
+    <!-- 푸터 -->
+    <footer>
+        <div class="inner_content">
+            <div class="foot_top">
+                <section>
+                    <ul class="foot_menu">
+                        <li><a href="#">기업 및 단체구매안내</a></li>
+                        <li><a href="#">가맹상담신청</a></li>
+                        <li><a href="#">사이버신문고</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <dl class="info">
+                        <dt>Address</dt>
+                        <dd>
+                            서울특별시 중구 을지로 170, 8층(을지로4가,을지트윈티워)투썸플레이스
+                        </dd>
+                        <dt>Customer Center</dt>
+                        <dd>고객센터:1577-4410 팩스:02-2058_6777</dd>
+                    </dl>
+                </section>
+            </div>
+            <div class="foot_bottom">
+                <ul class="footmenu2">
+                    <li><a href="#">이용약관</a></li>
+                    <li class="yellow"><a href="#"></a>개인정보처리방침</li>
+                    <li><a href="#">위치기반서비스 이용약관</a></li>
+                    <li><a href="#">이메일 무단수집거부</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                </ul>
+                <p>
+                    <span>대표이사:이영상</span>
+                    <span>개인정보보호책임자:정병구</span>
+                    <span>사업자등록번호:404-86-01054</span>
+                </p>
+                <p>
+                    <span>통신판매업종신고증:제2018-서울중구-0353호</span>
+                    <span>대표이메일:helpmaster@twosome.co.kr</span>
+                </p>
+                <p class="copy">Copyright &copy; 2021 A TWOSOME PLAYS Co, LTD. All Rights Reserved.</p>
+                <ul class="sns_list">
+                    <li><a href="#"><img src="./img/ico_32_facebook.svg" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="./img/ico_32_instagram.svg" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="./img/ico_32_youtube.svg" alt="유튜브"></a></li>
+                </ul>
+            </div>
+        </div> 
+    </footer>
+</body>
+</html>

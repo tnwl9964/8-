@@ -1,0 +1,47 @@
+*{margin: 0; padding: 0;}
+.box{
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    margin: 100px auto;
+    transition: all 1s ease 0s;
+}
+.perspective_div{
+    width: 1000px;
+    min-height: 800px;
+    margin: 0 auto;
+    perspective: 500px;
+    perspective-origin: 50% 50px;
+    background: #ccc;
+    position: relative;
+    border: 1px solid #ccc;
+}
+.perspective_div *{border: 1px solid black;}
+.a:hover{
+    /* transform: translateX(-50px); */
+    /* 괄호안에 가로축으로 이동할 거리를 적는다. */
+    transform: translateX(50%);
+    /* 여기서%는 부모가 아닌 선택한 태그의 너비의 50%마큼 계산되었다. */
+}
+.b:hover{
+    /* transform: translateY(-100px)translateX(100px); */
+    transform: translate(100px,-100px);
+}
+.c{
+    position: absolute;
+    margin: 0 auto;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+}
+.c:hover{transform: translateZ(100px);}
+.d{transform-origin: 10% 90%;}
+.d:hover{transform: rotate(-90deg);}
+.e:hover{transform: rotateX(90deg);}
+.f:hover{transform: rotateY(90deg);}
+.g:hover{transform: rotateZ(90deg);}
+.h:hover{transform: scaleX(200%);}
+.i:hover{transform: scaleY(200%);}
+.j:hover{
+    transform: scale(200%,150%);
+    /* x축y축 값이 같다면 한개만 쓸 수 있다. */
+}

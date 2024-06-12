@@ -1,0 +1,48 @@
+.filter1 img{
+    filter: grayscale(1);
+    /*100%도 동일 1=100% */
+    /* 0~1로 갈수록 회색계통으로 변함. */
+    transition: all 1s ease 0s;
+}
+.filter1 img:hover{filter: grayscale(0);}
+
+.filter2 img{
+    filter: brightness(20%);
+    /* 기본밝기 100%를 기준으로 했을 때 20%만큼의 밝기로 변함. */
+    transition: all 1s ease 0s;
+}
+.filter2 img:hover{filter: brightness(1);}
+
+.filter3 img{
+    filter: blur(0);
+    /* 블러의 수치가 0이 기본이고 높아질수록 더 부드럽게 변함. */
+    transition: all 1s ease 0s
+}
+.filter3 img:hover{filter: blur(30px);}
+
+.filter4 img{
+    filter: hue-rotate(0);
+    /* 원본색상에서 270도 만큼 회전한 색상으로 변함 */
+    transition: all 1s ease 0s;
+}
+.filter4 img:hover{filter: hue-rotate(270deg);}
+
+.filter5{
+    background: url(../img/KakaoTalk_20240409_111406225.jpg) no-repeat 50% 50% / cover;
+    width: 500px;
+    height: 500px;
+}
+.filter5 h1{
+    transition: 
+    width 1s cubic-bezier(0.42,-0.37, 0.59, 1.48) 0s,
+    height 1s cubic-bezier(0.42,-0.37, 0.59, 1.48) 1s,
+    border-radius 1s cubic-bezier(0.42,-0.37, 0.59, 1.48) 2s;
+    width: 50%;
+    border: 1px solid lime;
+    height: 100px;
+    background-color: rgba(255,255,255,0.3);
+    /* backdrop-filter: blur(10px); */
+    backdrop-filter: hue-rotate(180deg);
+    /* backdrop-filter는 선택한 태그의 뒷쪽면에 필터를 적용하는 것이다. */
+}
+.filter5 h1:hover{width: 100%; height: 100%; border-radius: 50%;}

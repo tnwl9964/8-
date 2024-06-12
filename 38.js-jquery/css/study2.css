@@ -1,0 +1,7 @@
+.box{
+    border: 1px solid black;
+}
+.box.on{
+    background: black;
+    color: white;
+}

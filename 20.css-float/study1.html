@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>float</h1>
+    <p>선택한 태그를 공중에 붕~띄어서(플로팅) 왼쪽 혹은 오른쪽에 배치시키는 방식</p>
+    <p>공중에 붕~띄어진 태그들은 공간을 차지하지 않고 부모태그를 기준으로 했을 때, 집나간 자식태그가 된다. -> 부모태그가 자식태그를 포함할 만큼 높이를 자동으로 만들 수 없다. -> 부모태그의 다음형제태그가 있을 때 레이아웃이 틀어질 수 있다.</p>
+    
+    <h1>clear</h1>
+    <p>clear속성이 적용된 태그는 앞서 만들어진 형제태그 중에서 float되어있는 태그 중 가장 아래까지 내려와있는 태그의 바로밑에 배치된다. (부모태그가 클리어속성이 적용된 태그가 있는 부분까지 높이를 자동으로 늘리게되어 레이아웃이 틀어지지 않는다.)</p>
+
+    <div class="box_mom">
+        <article class="a">ar1</article>
+        <article class="b">ar2</article>
+        <article class="c">ar3</article>
+        <!-- <span class="clearbox">clearbox</span> -->
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci voluptatum id nulla accusantium, enim asperiores iste aspernatur obcaecati doloremque tenetur. Adipisci aliquam amet error quibusdam iste ut minus vero dignissimos!</p>
+</body>
+</html>

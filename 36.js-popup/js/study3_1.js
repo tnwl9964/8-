@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $(".open_popup").click(function(){
+        $(".popup").addClass("show")
+        $(".blackcover").addClass("show")
+    })
+    $(".bth_close_popup").click(function(){
+        $(".popup").removeClass("show")
+        $(".blackcover").removeClass("show")
+    })
+})

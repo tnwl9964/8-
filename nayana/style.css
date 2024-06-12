@@ -1,0 +1,109 @@
+html{
+    font-size: 12px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.wrap{
+    width: 920px;
+    margin: 0 auto;
+}
+nav{
+    width: 530px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lnb{
+    background: #4c4c4c;
+    border-radius: 0px 0px 6px 6px;
+    width: 205px;
+    padding: 2px 18px;
+    display: flex;
+    margin-left: auto;
+    justify-content: center;    
+    text-transform: uppercase;
+    color: white;
+    font-size: 8px;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+}
+.lnb>li{
+    flex-grow: 1;
+    border-right: 1px solid white;
+    text-align: center;   
+}
+.lnb>li:last-of-type{border-right: none;}
+
+.gnb{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px
+}
+.gnb>li{
+    font-size: 15px;
+    font-weight: 600;
+    flex-grow: 1;
+    text-align: center;    
+}
+.gnb>li:hover{color: #32878c;}
+.gnb>li:last-of-type{margin-right: 0;}
+
+.contents{display: flex;}
+.contents>section{flex: 1; margin-right: 28px;}
+.contents>section:last-of-type{margin-right: 0;}
+.contents>section>h2{
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 1px;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.notice_list>li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    background: url(./img/icon_dot.gif) no-repeat 4px 50%;
+    padding-left: 10px;
+}
+.notice_list>li:last-of-type{margin-bottom: 0}
+.quick_menu{
+    display: flex;
+    justify-content: space-between;
+}
+/* .quick_menu>li{border: 1px solid blue;} */
+
+footer{
+    margin-top: 30px;
+    background: #f0f0f0;
+    padding: 22px 0;
+}
+.inner_content{
+    width: 920px;
+    margin: 0 auto;
+    display: flex;
+}
+.f_logo{
+    margin-right: 48px;
+}
+.f_nemu{
+    display: flex;
+    margin-bottom: 10px;
+}
+.f_nemu>li{
+    padding: 0 12px;
+    font-weight: bold;
+    color: #868686;
+    border-right: 1px solid #868686;
+}
+.f_nemu>li:last-of-type{border-right: none;}
+.f_nemu>li:first-of-type{padding-left: 0;}
+.info>address{
+    font-size: 10px;
+    color: #868686;
+}
+.copy{
+    color: #868686;
+    text-transform: uppercase;
+}

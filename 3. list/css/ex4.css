@@ -1,0 +1,112 @@
+*{margin: 0; padding: 0;}
+a{color: inherit; text-decoration: none;}
+b,strong,h1,h2,h3,h4,h5,h6{font-weight: inherit; font-size: inherit;}
+i,em,address{font-style: inherit;}
+ul,ol{list-style: none;}
+table{border-collapse: collapse;}
+img{max-width: 100%;}
+
+html{font-family: "Noto Sans KR", sans-serif; font-size: 14px;}
+
+.naverlist{
+    /* border: 1px solid red; */
+    width: 1050px; 
+    margin: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.naverlist>li{
+    border-bottom: 1px solid gray;
+    padding: 22px 0 ;
+    display: flex;
+}
+.naverlist>li:last-of-type{border-bottom: none;}
+.naverlist>li>a{
+    flex-basis: 156px;
+    margin-right: 22px;
+}
+.naverlist>li>a img{width: 100%;}
+
+
+.con_desc{
+    border-right: 1px solid gray;
+    flex-basis: 627px;
+    margin-right: 25px;
+    padding-right: 120px;
+}
+.price_desc{
+    flex-basis: 230px;
+}
+.price_desc h4{
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+.con_desc h3{
+    font-weight: bold;
+    margin-bottom: 13px;
+    font-size: 1.3rem;
+}
+.con_desc h3+p{margin-bottom: 17px;}
+.con_desc h3+p+p{color: #777; margin-bottom: 16px;}
+
+.price{
+    color: red; 
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-right: 8px;
+} 
+.price+a{
+    background: #91949e;
+    color: white;
+    font-weight: 300px;
+    padding: 8px 10px;
+}
+.rsc{
+    /* border: 1px solid red; */
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin-bottom: 27px;
+}
+.rsc>*{
+    /* border: 1px solid black; */
+    display: inline;
+}
+dl.rev{
+    display: inline-flex;
+    /* border: 1px solid red; */
+}
+dl.rev>*{
+    /* border: 1px solid black; */
+    display: inline;
+}
+.n_color{color: #0bb75b;}
+/* .pricslist{
+    border: 1px solid red;
+} */
+.pricslist>li{
+    /* border: 1px solid blue; */
+    margin-bottom: 8px;
+}
+.pricslist>li:last-of-type{margin-bottom: 0;}
+.pricslist>li>a{
+    display: flex;
+    /* border: 1px solid orange; */
+    justify-content: space-between;
+}
+.npayplus:after{
+    vertical-align: middle;
+    content: "";
+    display: inline-block;
+    width: 42px;
+    height: 13px;
+    background: url(../img/naverplus.svg) no-repeat 50% 50% / contain;
+}
+.npay:after{
+    vertical-align: middle;
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 13px;
+    background: url(../img/npay.svg)no-repeat 50% 50% / contain; 
+}

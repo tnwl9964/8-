@@ -1,0 +1,27 @@
+*{margin: 0; padding: 0;}
+.box{
+    border: 50px solid red;
+    /* width: auto; */
+    padding: 20px;
+    box-sizing: content-box;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* 
+        배경이미지
+        무슨파일을 배경이미지로?
+        배경이미지 가로세로 반복을?
+        배경이미지 어디다두어야?
+        배경이미지 크기는 어떻게? 
+    */
+    /* 
+        background-image:url(경로)
+        background-repeat:반복;
+        background-position: x y;
+        background-size: hori verti; 
+    */  
+    background: url(../img/KakaoTalk_20240404_110700824.jpg)no-repeat 50% 100% / contain;
+    height: 600px;
+
+}
+

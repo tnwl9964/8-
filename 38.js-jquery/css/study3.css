@@ -1,0 +1,13 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+
+.banner{
+    width: 400px;
+    transition: all 1s ease 0s;
+    border: 1px solid black;
+    height: 0px;
+    overflow: hidden;
+}
+.banner.on{
+    height: 120px;
+}

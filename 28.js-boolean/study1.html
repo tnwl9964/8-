@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>참거짓 데이터 - boolean</title>
+</head>
+<body>
+    <h1>boolean 데이터</h1>
+    <p>값이 두개 밖에 없다. true/false</p>
+
+    <h2>비교를 통하여 참거짓이 계산된다.</h2>
+    <p>크다,작다,같다,같지않다 와 같은 비교를 통하여 참거짓이 계산된다.</p>
+    <p>!는 자바스크립트에서 부정의 의미(not)으로 사용된다.</p>
+    <script>
+        console.log(10>7) //true
+        console.log(10>=7) //true //크거나 같다. true
+        console.log(9<=20) //작거나 같다. true
+        console.log(-2>-10) //true
+        console.log(-100>10) //false
+        console.log(10==10) // ==같다라고 해석 true
+        console.log(10===10) // ===데이터형태까지 완벽히 같다 해석 true
+        console.log("10"==10) //true
+        console.log("10"===10) //false
+        console.log(10!=9) // !는 부정(아니다,반대)의 의미다. true
+        console.log(10!=="10") //데이터형태까지 완벽히 같지 않다. true
+        console.log(!(10>2)) //false
+        console.log(!(!(10>2))) //부정의 부정 true
+    </script>
+
+    <h2>있으면true 없으면 false</h2>
+    <h3>false로 간주되는 경우</h3>
+    <ul>
+        <li>숫자데이터인데 값이 0인 경우</li>
+        <li>문자데이터인데 내용이 없는 빈 문자인 경우</li>
+        <li>변수를 선언했는데 변수 안에 아무 값도 저장되지 않은 경우</li>
+        <!-- <li>undefined 값은 false으로 간주된다.</li> -->
+        <!-- <li>null값은 false로 간주한다.</li> -->
+    </ul>
+    <script>
+        0 //false로 간주됨.
+        -190 //true로 간주됨.
+        !-190 //false로 간주됨.
+        "" //false로 간주됨.
+        !"" //true로 간주됨.
+        "text" //true로 간주됨.
+        !"text" //false로 간주됨.
+        !!!"text" //false로 간주됨.
+        let abc //false로 간주됨.
+        !abc //true로 간주됨.
+        abc //false로 간주됨.
+        // alert(abc) //false로 간주됨.
+    </script>
+
+    <h1>계산표현</h1>
+    <p>자바스크립트에서는 특수한 계산표현이  있다.</p>
+    <script>
+        let num1 = 10
+        num1 = num1 + 5
+        console.log(num1)
+
+        let num2 = 20
+        num2 += 10
+        console.log(num2)
+
+        let num3 = 20
+        num3 = num3 - 10
+        console.log(num3)
+
+        let num4 = 20
+        num4 -= 10
+        console.log(num4)
+
+        let num5 = 10
+        num5 = num5 * 2
+        console.log(num5)
+
+        let num6 = 10
+        num6 *= 2
+        console.log(num6)
+
+        let num7 = 10
+        num7 = num7 / 2
+        console.log(num7)
+
+        let num8 = 10
+        num8  /= 2
+        console.log(num8)
+
+        let num9 = 10
+        num9++ // 1을 더한다.
+        num9++
+        console.log(num9)
+
+        let num10 = 10
+        num10-- //1을 뺸다.
+        console.log(num10)
+        num10++ //위에서 아래로 해석해서 그 뒤에 이것은 콘솔에 나오지 않는다.
+    </script>
+</body>
+</html>

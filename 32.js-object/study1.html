@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체데이터형태</title>
+</head>
+<body>
+    <h1>객체 - object</h1>
+    <p>자바스크립트에서 사물을 나타낼 때 사용하는 표현</p>
+    <p>객체는 ,(콤마)를 사용하여 프로퍼티를 입력할 수 있다.</p>
+    <p>그리고 각각의 프로퍼티는 :(콜론)을 사용하여 key:value형태로 구성되어 있다.</p>
+    <p>여기서 key값을 사용하여 저장된 value값을 가져올 수 있다. key값은 객체안에 속해있는 변수처럼 활용된다.</p>
+
+    <script>
+        let person1 = ["이수지",25,"여성",false,["사과","자몽","용과"]]
+        person1[0] //"이수지"
+        person1[1] //25
+        person1[2] //"여성"
+        person1[3] //false
+        person1[4] //["사과","자몽","용과"]
+        person1[4][0] //"사과"
+        person1[4][1] //"자몽"
+        person1[4][2] //"용과"
+
+        let person2 = {name:"이수지",age:25,gender:"여성",marr:false,fruit:["사과","자몽","용과"]}
+        person2.name //"이수지"
+        person2["name"] //"이수지"
+        person2.age //25
+        person2["age"] //25
+        person2.gender //"여성"
+        person2["gender"] //"여성"
+        person2.marr //false
+        person2["marr"] //false
+        person2.fruit //["사과","자몽","용과"]
+        person2["fruit"] //["사과","자몽","용과"]
+        person2.fruit[0] //"사과"
+        person2["fruit"][0] //"사과"
+        person2.fruit[1] //"자몽"
+        person2["fruit"][1] //"자몽"
+        person2.fruit[2] //"용과"
+        person2["fruit"][2] //"용과"
+
+    </script>
+</body>
+</html>

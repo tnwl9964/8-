@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수와 상수</title>
+</head>
+<body>
+    <h1>변수</h1>
+    <p>데이터가 저장되는 조그마한 메모리공간</p>
+    <ol>
+        <li>변수를 생성한다 - 변수를 선언한다.</li>
+        <li>변수에 값을 최초로 대입한다 - 변수를 초기화한다.</li>
+    </ol>
+    <p>변수는 선언한 후에 새로운 값을 저장하면 이전에 저장되어있던 값은 사라진다.</p>
+    <p>변수에 저장된 값을 올바르게 사용하기위해서는 변수를 선언한 뒤 변수가 초기화된 후에 사용해야한다.</p>
+    <script>
+        let a
+        a = 10
+        let b = 20
+        // alert(a+b)
+        let mycat = "땅꼬"
+        mycat = "샤샤"
+        // alert(mycat)
+    </script>
+    <h2>변수의 효용</h2>
+    <p>변수를 왜 쓰는가?</p>
+    <script>
+        // 사용자에게 이름을 물어보고 
+        // 1. 사용자님 환영합니다! 라고 인사를 하는 앱을 만들어보자.
+        // 2.사용자님은 몇살인가요? 라고 물어보고 사용자가 입력한 나이를 저장하는 기능도 추가해보자.
+        // alert(prompt ("당신의 이름은 무엇인가요?")+"님 환영합니다!")
+        // prompt(prompt("당신의 이름은 무엇인가요?")+"님은 몇살인가요?")
+
+        let userName = prompt("당신의 이름은 무엇인가요?")
+        let userAge = prompt(userName+"님은 몇살인가요?")
+        document.write(userAge+"살 "+userName+"님 환영합니다!")
+    </script>
+</body>
+</html>

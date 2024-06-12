@@ -1,0 +1,40 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+img{max-width: 100%;}
+
+.station{
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.train{
+    width: 300%;
+    height: 100%;
+    display: flex;
+    transition: all 0.7s ease 0s;
+}
+.train>li{
+    flex: 1;
+    height: 100%;
+}
+.train>li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.controler{
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.controler span{
+    padding: 10px;
+    cursor: pointer;
+    background: white;
+}

@@ -1,0 +1,54 @@
+@font-face{
+    font-family: "malgunsl";
+    src: url(../font/malgunsl.ttf);
+    font-weight: 500;
+}
+@font-face{
+    font-family: "malgun";
+    src: url(../font/malgun.ttf);
+    font-weight: 600;
+}
+@font-face{
+    font-family: "malgunbd";
+    src: url(../font/malgunbd.ttf);
+    font-weight: 700;
+}
+.all{
+    border: 2px solid #e9e9e9;
+    width: 960px;
+    height: 725px;
+    padding: 0 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+/* 메뉴 */
+.nemu1{
+    border: 1px solid green;
+    font-family: "malgunbd";
+    font-size: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    
+}
+.nemu1>li{
+    border: 1px solid red;
+    margin-right: 30px;
+    
+}
+.nemu2{
+    background: #f6f7f9;
+    border-radius: 5px;
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    font-family: "malgunbd";
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.nemu2>li{
+    border: 1px solid red; 
+    margin-left: 20px;
+}
+.button{border: 1px solid red;}

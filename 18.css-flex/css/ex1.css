@@ -1,0 +1,19 @@
+*{margin: 0; padding: 0;}
+.box{
+    background: orange;
+    width: 680px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box>div{
+    background: pink;
+    width:calc((100% - 10px)/2); /*295px;*/
+    height: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.box>div:nth-of-type(2n){margin-right: 0;}
+.box>div:last-of-type(1),
+.box>div:last-of-type{margin-bottom: 0;}

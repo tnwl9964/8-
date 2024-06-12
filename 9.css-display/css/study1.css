@@ -1,0 +1,28 @@
+html{
+    width: auto;
+    border:10px solid pink;
+}
+
+body{
+    width: auto;
+    border: 1px solid black;
+
+}
+p{
+    width: auto;
+    border: 1px solid red;
+    /* width: 600px;
+    height: 200px; */
+}
+h1{
+    border: 1px solid blue;
+    width: 400px;
+    height: 400px;
+}
+b{
+    border: 1px solid green;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    /* 인라인레벨이기 때문에 길이가 조절 안됨 */
+}

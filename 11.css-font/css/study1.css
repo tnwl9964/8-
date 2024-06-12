@@ -1,0 +1,70 @@
+.a>p{
+    /* font-size: 50px; */
+    font-size: 2rem; /*계산된 글씨크기는 24픽셀이다.*/
+}
+.a{
+    font-size: 2em; /*계산된 글씨크기는 48픽셀이다.*/
+}
+ul{
+    font-size: 2rem; /*계산된 글씨크기는 24픽셀이다.*/
+}
+html{
+   font-size: 12px; /*1rem = 12픽셀*/
+}
+.b p{
+    font-size: 50px;
+    /* line-height: 200%; */
+    line-height: 3;
+}
+p.button{
+    border: 1px solid black;
+    width: 200px;
+    height: 60px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 60px;
+}
+.c ul{
+    font-weight: bold;
+}
+.d p{
+    font-style: italic;
+}
+.d address{
+    font-style: normal;
+}
+.e p{
+    letter-spacing: 10px;
+}
+.f p{
+    word-spacing: 30px;
+}
+.norwap{
+    white-space: nowrap;
+}
+.pre{
+    white-space: pre;
+}
+.g p:nth-of-type(2){
+    text-indent: 50px;
+}
+.h ul li :nth-of-type(3){
+    text-decoration: line-through;
+}
+.i>p:last-of-type{
+    text-align: justify;
+}
+.j p :last-of-type{
+    text-transform: capitalize;
+}
+.k p:last-of-type{
+    word-break:keep-all;
+}
+.l p strong{
+    border: 1px solid red;
+    font-size: 5rem;
+}
+.l p i{
+    border: 1px solid blue;
+    vertical-align: baseline;
+}

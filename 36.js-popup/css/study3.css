@@ -1,0 +1,30 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: inherit;}
+
+.wrap{width: 1000px; margin: 0 auto;}
+.blackcover{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /*너비를 적용할 떄 100vw 쓰지 않는 이유는 100vw는 스크롤너비까지 포함해서 계산하기 때문*/
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.904);
+    display: none;
+}
+.blackcover.show{display: block;}
+.popup{
+    z-index: 10;
+    padding: 10px;
+    border: 1px solid black;
+    width: 350px;
+    background: white;
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    display: none;
+}
+
+.popup.show{display: block;}
+.popup_view{min-height: 300px;}
+.open_popup{cursor: pointer;}

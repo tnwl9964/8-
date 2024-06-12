@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적표</title>
+    <style>
+        #canvas{
+            border: 1px solid #000;
+            width: 700px;
+            margin: 0 auto;
+            text-align:center;
+            padding:20px;
+            background: ivory;
+        }
+        table{
+            width:100%;
+            border-collapse:collapse;
+        }
+        td{
+            width:16%
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let studentName = "홍and길동"
+        let scoreKo = 56
+        let scoreSci = 22
+        let scoreHs = 80
+        let scoreMa = 100
+        let scoreSc = 90
+        let scoreEn = 70
+        let scoreSum = scoreKo+scoreSci+scoreHs+scoreMa+scoreSc+scoreEn
+        let scoreAver = Math.round(scoreSum/6*100)/100
+        let scoreGrade = scoreAver>=90?"A":scoreAver>=80?"B":scoreAver>=70?"C":scoreAver>=60?"D":"F"
+        
+        document.write(`    
+        <div id="canvas">
+        <h1>${studentName}님의 성적표</h1>
+        <p>1학년 학부모님들께 인사드립나다. 성큼 다가온 가을이 느껴지는 요즘 입니다. <br>이번에 ${studentName} 자녀분께서 본 중간고사 결과를 이렇게 안내 드립니다.</p>
+        <table border="1">
+            <tr>
+                <th>과목</th>
+                <th>지필수행</th>
+                <th>고사/영역명<br>(반영비율)</th>
+                <th>만점</th>
+                <th>받은점수</th>
+                <th>합계</th>
+            </tr>
+            <tr>
+                <td>국어</td>
+                <td>지필</td>
+                <td>중간고사(100.00%)</td>
+                <td>100.00</td>
+                <td>${scoreKo}</td>
+                <td>${scoreKo}</td>
+            </tr>
+            <tr>
+                <td>사회</td>
+                <td>지필</td>
+                <td>중간고사(100.00%)</td>
+                <td>100.00</td>
+                <td>${scoreSci}</td>
+                <td>${scoreSci}</td>
+            </tr>
+            <tr>
+                <td>역사</td>
+                <td>지필</td>
+                <td>중간고사(100.00%)</td>
+                <td>100.00</td>
+                <td>${scoreHs}</td>
+                <td>${scoreHs}</td>
+            </tr>
+            <tr>
+                <td>수학</td>
+                <td>지필</td>
+                <td>중간고사(100.00%)</td>
+                <td>100.00</td>
+                <td>${scoreMa}</td>
+                <td>${scoreMa}</td>
+            </tr>
+            <tr>
+                <td>과학</td>
+                <td>지필</td>
+                <td>중간고사(100.00%)</td>
+                <td>100.00</td>
+                <td>${scoreSc}</td>
+                <td>${scoreSc}</td> 
+            </tr>
+            <tr>
+                <td>영어</td>
+                <td>지필</td>
+                <td>중간고사(100.00%)</td>
+                <td>100.00</td>
+                <td>${scoreEn}</td>
+                <td>${scoreEn}</td> 
+            </tr>
+            <tr>
+                <th colspan="2">총합</th>
+                <th colspan="2">평균점수</th>
+                <th colspan="2">등급</th>
+            </tr>
+            <tr>
+                <td colspan="2">${scoreSum}</td>
+                <td colspan="2">${scoreAver}</td>
+                <td colspan="2">${scoreGrade}</td>
+            </tr>
+        </table>
+        <p>이상 ${studentName}학생의 성적표 결과 입니다. 아무쪼록 많이 다독여주십시오.</p>
+    </div>`)
+    </script>
+
+
+</body>
+</html>

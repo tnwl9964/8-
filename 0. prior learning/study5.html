@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>참거짓데이터 - boolean</title>
+</head>
+<body>
+    <h1>boolean데이터</h1>
+    <p>값이 두개 true / false 밖에 없다.</p>
+
+    <h2>비교</h2>
+    <p>어떤 명확한 비교를 통해서 참인지 거짓인지 계산된다.</p>
+    <p>예)나는 빵이2개가 있고 너는 빵이 1개 있다 그럼 내가 너보다 빵이 많다는 것은 사실이다. -> 2>1</p>
+    <p>!은 부정의 의미로 사용된다.</p>
+    
+    <script>
+        console.log(2>1)  //2은 1보다 크다. ->true
+        console.log(2<1) //2은 1보다 작다 ->false
+        console.log(10==10) //10은 10과 같다. ->true
+        console.log(10>=10) //10은 10보다 크거나 같다. ->true
+        console.log(10<=9) //10은 9보다 작거나 같다. ->false
+        console.log(10!=10) //10은10과 같지않다.
+    </script>
+
+    <h2>사실에 대한 존재유무</h2>
+    <p>~이 있다면 true / ~이 없다면 false</p>
+    <p>false로 간주되는 경우</p>
+    <ul>
+        <li>숫자데이터인데 값이 0인 경우</li>
+        <li>문자데이터인데 빈문자데이터인 경우</li>
+        <li>변수인데 값이 저장되지 않는 빈 변수</li>
+    </ul>
+    <script>
+        0
+        ""
+        let aa
+        // console.log(0)
+    </script>
+    <h1>삼항연산자</h1>
+    <p>(조건항)?(조건이참일때남겨지는항):(조건이거짓일때남겨지는항)</p>
+    <script>
+        console.log(true?20:30)
+        console.log(20>10?"참이군":"거짓이군")
+        // let Age = prompt("나이를 입력하세요!")
+        // console.log(Age>=20?"환영합니다":"나가주세요")
+        console.log(20?30:40)
+        console.log(!0?"돈없다":"돈많다")
+        console.log(!""?"배고파":"배불러")
+        let a =10
+        let b = 3
+        a>10?b=4:b<10?a=5:b=2
+        console.log(a,b)
+    </script>
+</body>
+</html>

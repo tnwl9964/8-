@@ -1,0 +1,54 @@
+.bmi_frame{
+    background: #e5e5e5;
+    border-radius:10px; 
+    padding: 20px 60px;
+    width: 600px;
+    margin: 0 auto;
+}
+.bmi{display: flex; margin-top: 60px;}
+.bmi>div{
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.bmi>div:nth-of-type(1){
+    flex: 1.2;
+    background: blue;
+}
+.bmi>div:nth-of-type(1):after{
+    content: "18.5";
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%,-100%);
+    color: black;
+}
+.bmi>div:nth-of-type(2){
+    flex: 1;
+    background: green;
+}
+.bmi>div:nth-of-type(2):after{
+    content: "23";
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%,-100%);
+    color: black;
+}
+.bmi>div:nth-of-type(3){
+    flex: 0.8;
+    background: orange;
+}
+.bmi>div:nth-of-type(3):after{
+    content: "25.00";
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%,-100%);
+    color: black;
+}
+.bmi>div:nth-of-type(4){
+    flex: 3.2;
+    background: red;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리반 인원</title>
+    <script src="./js/class8th2.js"></script>
+</head>
+<body>
+    <h1>우리반 학급</h1>
+    <ul>
+        <!-- <li>
+            <h3>정현진</h3>
+            <p>성별 : 남자</p>
+            <p>나이 : 30</p>
+            <p>결혼 : 기혼</p>
+            <dl>
+                <dt>좋아하는 과일</dt>
+                <dd>파인애플</dd>
+                <dd>멜론</dd>
+            </dl>
+        </li> -->
+        <!-- <li>
+            <h3>김경민</h3>
+            <p>성별 : 여성</p>
+            <p>나이 : 30</p>
+            <p>결혼 : 미혼</p>
+            <dl>
+                <dt>좋아하는 과일</dt>
+                <dd>수박</dd>
+                <dd>참외</dd>
+                <dd>오렌지</dd>
+                <dd>파인애플</dd>
+                <dd>복숭아</dd>
+                <dd>멜론</dd>
+                <dd>바나나</dd>
+                <dd>키위</dd>
+                <dd>딸기</dd>
+            </dl>
+        </li> -->
+    </ul>
+    <script>
+        document.write("<ul>")
+            for(let i=0 ; i<green8th.length ; i++){
+                let dd = ""
+                for(let j=0 ; j<green8th[i].fruits.length ; j++ ){
+                    dd +=`<dd>${green8th[i].fruits[j]}</dd>`
+                }
+            document.write(`
+            <li>
+                <h3>${green8th[i].name}</h3>
+                <p>성별 : ${green8th[i].gender}</p>
+                <p>나이 : ${green8th[i].age}</p>
+                <p>결혼 : ${green8th[i].marr?"기혼":"미혼"}</p>
+                <dl>
+                    <dt>좋아하는 과일</dt>
+                    ${dd}
+                </dl>
+            </li>
+            `)
+            // document.write(`<ul>`)
+            //     for(let i=0 ; i<green8th.length ; i++){
+            //         document.write(`
+            //         <li>
+            //             <h3>${green8th[i].name}</h3>
+            //             <p>성별 : ${green8th[i].gender}</p>
+            //             <p>나이 : ${green8th[i].age}</p>
+            //             <p>결혼 : ${green8th[i].marr?"기혼":"미혼"}</p>
+            //             <dl>
+            //                 <dt>좋아하는 과일</dt>`)
+            //                 for(let j=0 ; j<green8th[i].fruits.length ; j++){
+            //                     document.write(`<dd>${green8th[i].fruits[j]}</dd>`)    
+            //                 }           
+            //     document.write(`</dl></li>`)              
+            //     }
+        document.write(`</ul>`)
+    }
+    </script>
+</body>
+</html>

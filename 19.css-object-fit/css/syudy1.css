@@ -1,0 +1,21 @@
+.img1{
+    width: 320px;
+    height: 400px;
+}
+.img2{
+    border: 1px solid red;
+    width: 320px;
+    height: 400px;
+    object-fit: contain;
+}
+.img3{
+    border: 1px solid red;
+    width: 320px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 100% 50%;
+    transition: all 2s ease 0s;
+}
+.img3:hover{
+    object-position: 0% 50%;
+}

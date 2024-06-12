@@ -1,0 +1,14 @@
+.box{
+    background: lightcoral;
+}
+.box1 img{
+    mix-blend-mode: color-burn;
+    transition: all 1s ease 0s;
+    /* 선택한 태그보다 아래있는 이미지나 색상과 혼합이 됨 */
+}
+.box1 img:hover{mix-blend-mode: difference;}
+
+.box2 img{
+    mix-blend-mode: difference;
+    /* 선택한 태그보다 아래있는 이미지나 색상과 혼합이 됨 */
+}

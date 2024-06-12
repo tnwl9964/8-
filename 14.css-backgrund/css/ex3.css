@@ -1,0 +1,62 @@
+*{margin: 0; padding: 0;}
+a{color: inherit; text-decoration: none;}
+b,strong,h1,h2,h3,h4,h5,h6{font-weight: inherit; font-size: inherit;}
+i,em,address{font-style: inherit;}
+ul,ol{list-style: none;}
+table{border-collapse: collapse;}
+
+html{
+    font-size: 20px;    
+    font-family: "Noto Sans KR", sans-serif;
+}
+.img{
+    /* border: 1px solid blue; */
+    background: url(../img/sub_vis01_02.jpg) no-repeat 50% 50% / cover;
+    height: 250px;
+}
+.wrap{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.wrap h2{
+    /* border: 2px solid blue; */
+    margin-bottom: 100px;
+    text-align: left;  
+    background:url(../img/sub_tit_line.gif) repeat-x 0% 50%;  
+}
+span{
+    background-color: #ffffff;
+    padding-right: 20px;
+}
+@font-face {
+    font-family: "풀무원";
+    src: url(../font/PulmuoneLOHASBold.woff);
+} 
+.wrap h1{
+    /* border: 1px solid red; */
+    font-family: "풀무원";
+    font-size: 52px;
+    padding: 0 70px;
+    margin-bottom: 50px;
+}
+.color{
+    color: green;}
+.box{
+    /* border: 1px solid red; */
+    background: #f4f4f4;
+    width: 810px;
+    box-sizing: border-box;
+    padding: 40px 90px 50px;
+    margin: 0 auto;
+    letter-spacing: -0.4px
+}
+.box h3{
+    margin-bottom: 25px;
+}
+.box h3+p{
+    margin-bottom: 30px;
+}
+

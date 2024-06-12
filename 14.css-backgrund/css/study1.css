@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    border: 10px solid lime;
+    height: 600px;
+    background-color: orange;
+    background-image: url(../img/KakaoTalk_20240404_110700824.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    /*background-position: 100% 100%; 상대단위도 가능*/
+    /* background-position: right bottom; */
+    /* background-position: 2rem 2rem; */
+    /* background-position: calc(100% - 100px) 100px; */
+    /* clac() 도그를 사용할 때에는 부호를 쓸 수 있는 데 부호의 앞뒤 공간은 반드시 띄어쓰기를 할 것. 안하면 계산이 안 되고 에러가 납니다.(+,-,*,/)다 가능 */
+    
+    /* background-size: auto 200px; */
+    /* 세로사이즈를 200px 가로사이즈는 비율에 맞게 자동으로 조절 */
+    /* background-size: 400px auto; */
+    /* 세로사이즈를 비율에 맞게 자동으로 조절 가로사이즈는 400px */
+    /* background-size: 100% auto; */
+    /* 가로사이즈를 태그의 너비100%만큼으로 하고 세로사이즈는 이미지의 원본비율에 맞게 자동으로 조절 */
+    /* background-size: auto 100%; */
+    /* 세로사이즈를 태그의 너비100%만큼으로 하고 가로사이즈는 이미지의 원본비율에 맞게 자동으로 조절 */
+    /* background-size: cover; */
+    /* 배경이미지의 크기를 태그의 공간을 가득채울만큼 자동조절 - 배경이미지가 잘려나가는 부분이 있음 */
+    /* background-size: contain; */
+    /* 배경이미지가 잘리지않는 선에서 가능한 최대크기로 사이즈를 조절함 */
+    background:rgb(192, 255, 239) url(../img/KakaoTalk_20240404_110700824.jpg) no-repeat 0 0 / cover;
+    background-attachment: fixed;
+    background-blend-mode:multiply;
+}
+.gradi_box1 {
+    border: 10px solid green;
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(130deg, red 25%, green 64%, blue 94%);
+}
+.gradi_box2{
+    border: 10px solid pink;
+    width: 483px;
+    height: 515px;
+    background-image: radial-gradient(rgb(255, 156, 225) 20%, rgb(255, 229, 83)45%, rgb(174, 168, 255)80%);
+}

@@ -1,0 +1,45 @@
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+@keyframes move_left_to_right {
+    0%{transform: translateX(0px);}
+    50%{background: red;}
+    100%{transform: translateX(500px);}
+}
+.box1{
+    /* animation-name: move_left_to_right;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; */
+
+    animation: move_left_to_right 4s linear 0s 1 alternate forwards;
+}
+
+@keyframes am_rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.box2{
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    left: calc(50% - 200px);
+    top: -200px;
+    animation: am_rotate 20s linear 0s infinite;
+    border-radius: 50%;
+    border: 10px dashed black;
+}
+
+@keyframes am_run {
+    0%{transform: translate(0%,0%)}
+    25%{transform: translate(100%,0%)}
+    50%{transform: translate(100%,100%)}
+    75%{transform: translate(0%,100%)}
+    100%{transform: translate(0%,0%)}
+}
+.box3{animation: am_run  4s linear 0s infinite;}

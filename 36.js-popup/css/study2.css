@@ -1,0 +1,17 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: inherit;}
+
+.wrap{width: 1000px; margin: 0 auto;}
+.popup{
+    padding: 10px;
+    border: 1px solid black;
+    width: 350px;
+    background: white;
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    display: none;
+}
+.popup.hide{display: none;}
+.popup.show{display: block;}
+.popup_view{min-height: 300px;}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적표</title>
+</head>
+<body>
+    <!-- 사용자에게 이름과 점수를 각각 물어보고 총점과 평균점수 그리고 등급을 계산하여 다음과 같이 표로 출력될 수 있도록 자바스크립트 소스코드를 만들어보시오.
+    평균 95점 이상 1등급
+    평균 90점 이상 2등급
+    평균 80점 이상 3등급
+    평균 70점 이상 4등급
+    평균 60점 이상 5등급
+    외에는 6등급 -->
+    <script>
+        let username = prompt("당신의 이름은?") 
+        let scoreKo = Number(prompt("당신의 국어점수는?"))
+        let scoreEn= Number(prompt("당신의 영어점수는?")) 
+        let scoreMa = Number(prompt("당신의 수학점수는?")) 
+        let scoreSci = Number(prompt("당신의 사회점수는?")) 
+        let scoreSc = Number(prompt("당신의 과학점수는?")) 
+        let scoreSum  = scoreKo+scoreEn+scoreMa+scoreSci+scoreSc 
+        let scoreAver = scoreSum/5
+        let grade =""
+        if(scoreSum >= 95){
+            alert("당신의 점수는 "+scoreAver+"점 입니다")
+            grade = "1등급"
+        }else if(scoreAver >= 90){
+            alert("당신의 점수는 "+scoreAver+"점 입니다")
+            grade = "2등급"
+        }else if (scoreAver >= 80){
+            alert("당신의 점수는 "+scoreAver+"점 입니다.")
+            grade = "3등급"
+        }else if (scoreAver >= 70){
+            alert("당신의 점수는 "+scoreAver+"점 입니다.")
+            grade = "4등급"
+        }else if(scoreAver >= 60){
+            alert("당신의 점수는 "+scoreAver+"점 입니다.")
+            grade = "5등급"
+        }else{
+            grade = "6등급"
+        }
+        // alert("당신의 평균점수는 "+scoreAver+"점 이시고,등급은 "+grade+"입니다.")
+
+        document.write(`
+        <table border="1">
+            <caption>${username}님의 성적표</caption>
+            <tr>
+                <th>국어</th>
+                <td>${scoreKo}점</td>
+            </tr>
+            <tr>
+                <th>영어</th>
+                <td>${scoreEn}점</td>
+            </tr>
+            <tr>
+                <th>수학</th>
+                <td>${scoreMa}점</td>
+            </tr>
+            <tr>
+                <th>사회</th>
+                <td>${scoreSci}점</td>
+            </tr>
+            <tr>
+                <th>과학</th>
+                <td>${scoreSc}점</td>
+            </tr>
+            <tr>
+                <th>총점</th>
+                <td>${scoreSum}점</td>
+            </tr>
+            <tr>
+                <th>평균</th>
+                <td>${scoreAver}점</td>
+            </tr>
+            <tr>
+                <th>등급</th>
+                <td>${grade}</td>
+            </tr>
+        </table>
+        `)
+    </script>
+</body>
+</html>
